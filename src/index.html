@@ -1,73 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Image Search App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Search App</title>
 </head>
 <body>
-  <form class="search-form" id="search-form">
-    <input
-      type="text"
-      name="searchQuery"
-      autocomplete="off"
-      placeholder="Search images..."
-    />
-    <button type="submit">Search</button>
-  </form>
-
-  <div class="gallery">
-  </div>
-
-  <button type="button" class="load-more">Load more</button>
-
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/notiflix@2.7.0/dist/notiflix-aio-2.7.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.1.0/dist/simple-lightbox.min.js"></script>
-  <script type="module" src="app.js"></script>
+    <div class="container">
+        <h1>Image Search</h1>
+        <form class="search-form" id="search-form">
+            <input
+                type="text"
+                name="searchQuery"
+                autocomplete="off"
+                placeholder="Search images..."
+            />
+            <button type="submit">Search</button>
+        </form>
+        <div class="gallery">
+        </div>
+        <button type="button" class="load-more">Load more</button>
+    </div>
+    <div id="modal" class="modal">
+      <span class="close-button" id="close-button">&times;</span>
+      <img alt="" id="modal-image" />
+  </div>  
+  <script src="app.js" type="module"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Image Search App</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <form class="search-form" id="search-form">
-    <input
-      type="text"
-      name="searchQuery"
-      autocomplete="off"
-      placeholder="Search images..."
-    />
-    <button type="submit">Search</button>
-  </form>
-
-  <div class="gallery">
-  </div>
-
-  <button type="button" class="load-more">Load more</button>
-
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/notiflix@2.7.0/dist/notiflix-aio-2.7.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.1.0/dist/simple-lightbox.min.js"></script>
-  <script type="module" src="app.js"></script>
-</body>
-</html> -->
